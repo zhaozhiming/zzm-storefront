@@ -1,0 +1,14 @@
+<div class="modal-header" ng-cloak>
+    <h4 class="modal-title" id="wishlist-total-price-confirm-title">{{'WISHLIST_TOTAL_PRICE_TITLE' | translate}}</h4>
+</div>
+
+<div class="modal-body" stop-event="touchend">
+    <div class="row">
+        <div class="col-xs-12">
+          {{totalPrice || 'In the calculation...'}}
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" ng-click="closeWishlistTotalPriceDialog()" id="wishlist-total-price-confirm-btn" class="btn btn-secondary btn-lg">{{'YES' | translate}}</button>
+</div>
